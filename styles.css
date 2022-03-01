@@ -1725,13 +1725,11 @@ animation:rotation240 4s infinite linear;
     position: relative;
     width: 116px;
   }
-  
   .footer-left .logo-txt {
     width: 104px;
     height: 100px;
     z-index: 1;
   }
-  
   .footer-left .logo-moon {
     position: absolute;
     left: 42px;
