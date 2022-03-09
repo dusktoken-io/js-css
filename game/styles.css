@@ -1980,12 +1980,12 @@ h5 {
   margin: 0 auto;
   padding: 8vh 0 4vh;
 }
-.info-top svg {
+.info-top img {
   margin-right: 2vh;
   width: 64px;
   height: 64px;
-  filter: drop-shadow(4px 4px 4px #888) 
-          drop-shadow(-4px -4px 4px #888) 
+  filter: drop-shadow(4px 4px 4px #666) 
+          drop-shadow(-4px -4px 4px #666) 
           drop-shadow(8px 8px 8px rgba(0,0,0,.6)) 
           drop-shadow(-8px -8px 8px rgba(0,0,0,.6));
 }
