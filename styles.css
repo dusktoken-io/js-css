@@ -1651,7 +1651,7 @@ animation:rotation240 4s infinite linear;
   #earn-cont {
      background: url(https://res.cloudinary.com/dusktoken/image/upload/v1646013378/DuskToken.io/earn-left-top_im8j6k.png) left top no-repeat,
     url(https://res.cloudinary.com/dusktoken/image/upload/v1646013378/DuskToken.io/earn-right-top_fndyl8.png) right top no-repeat,
-    url(https://res.cloudinary.com/dusktoken/image/upload/v1646013378/DuskToken.io/earn-right-bottom_ccngxd.png) center bottom no-repeat;
+    url(https://res.cloudinary.com/dusktoken/image/upload/v1646013378/DuskToken.io/earn-right-bottom_ccngxd.png) right bottom no-repeat;
     
   }
   .events-left, .events-center, .events-right {
