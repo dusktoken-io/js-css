@@ -2355,13 +2355,14 @@ async function metamaskLogin() {
         readGame = new ethers.Contract(gameAddress, gameABI, provider)
         readToken = new ethers.Contract(tokenAddress, tokenABI, provider)
         
-        /*
-        provider = new ethers.providers.Web3Provider(window.ethereum)
-        readGame = new ethers.Contract(gameAddress, gameABI, provider)
-        readToken = new ethers.Contract(tokenAddress, tokenABI, provider)
+        
+        metamask = new ethers.providers.Web3Provider(window.ethereum)
+	/*
+        readGame = new ethers.Contract(gameAddress, gameABI, metamask)
+        readToken = new ethers.Contract(tokenAddress, tokenABI, metamask)
         */
         
-        signer = provider.getSigner()
+        signer = metamask.getSigner()
         game = new ethers.Contract(gameAddress, gameABI, signer)
         token = new ethers.Contract(tokenAddress, tokenABI, signer)
        
