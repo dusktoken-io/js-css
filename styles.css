@@ -1633,9 +1633,9 @@ animation:rotation240 4s infinite linear;
     filter: drop-shadow(4px 4px 8px #000) drop-shadow(-4px -4px 8px #000);
   }
   #nft-cont {
-    background: url(https://res.cloudinary.com/dusktoken/image/upload/v1646013378/DuskToken.io/earn-left-top_im8j6k.png) center bottom no-repeat,
-    url(https://res.cloudinary.com/dusktoken/image/upload/v1646013378/DuskToken.io/earn-left-bottom_woyil5.png) left top no-repeat,
-    url(https://res.cloudinary.com/dusktoken/image/upload/v1646013378/DuskToken.io/earn-right-top_fndyl8.png) right top no-repeat;
+    background: url(https://res.cloudinary.com/dusktoken/image/upload/v1646013375/DuskToken.io/nft-center-bottom_nooydm.png) center bottom no-repeat,
+    url(https://res.cloudinary.com/dusktoken/image/upload/v1646013375/DuskToken.io/nft-left-top_hhm0nn.png) left top no-repeat, 
+    url(https://res.cloudinary.com/dusktoken/image/upload/v1646013375/DuskToken.io/nft-right-top_sw8sdn.png) right top no-repeat;
   }
   .nft-center {
     display: none;
@@ -1649,9 +1649,10 @@ animation:rotation240 4s infinite linear;
     padding: 0 0 12vh;
   }
   #earn-cont {
-    background: url(https://res.cloudinary.com/dusktoken/image/upload/v1646013375/DuskToken.io/nft-left-top_hhm0nn.png) left top no-repeat,
-    url(https://res.cloudinary.com/dusktoken/image/upload/v1646013375/DuskToken.io/nft-right-top_sw8sdn.png) right top no-repeat, 
-    url(https://res.cloudinary.com/dusktoken/image/upload/v1646013375/DuskToken.io/nft-right-bottom_snsxwn.png) right bottom no-repeat;
+     background: url(https://res.cloudinary.com/dusktoken/image/upload/v1646013378/DuskToken.io/earn-left-top_im8j6k.png) center bottom no-repeat,
+    url(https://res.cloudinary.com/dusktoken/image/upload/v1646013378/DuskToken.io/earn-right-top_fndyl8.png) right top no-repeat,
+    url(https://res.cloudinary.com/dusktoken/image/upload/v1646013378/DuskToken.io/earn-right-bottom_ccngxd.png) right bottom no-repeat;
+    
   }
   .events-left, .events-center, .events-right {
     margin: 0;
