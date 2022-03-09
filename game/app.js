@@ -2349,20 +2349,18 @@ async function metamaskLogin() {
         accounts = await ethereum.request({ method: "eth_requestAccounts"})
         chainId = await ethereum.request({ method: 'eth_chainId' })
 
-        // Moralis speedy nodes
+        /* Moralis speedy nodes
         const provider = new ethers.providers.JsonRpcProvider(
           "https://speedy-nodes-nyc.moralis.io/3fae69c248338dfe53a77478/bsc/mainnet");
         readGame = new ethers.Contract(gameAddress, gameABI, provider)
         readToken = new ethers.Contract(tokenAddress, tokenABI, provider)
-        
-        
-        metamask = new ethers.providers.Web3Provider(window.ethereum)
-	/*
-        readGame = new ethers.Contract(gameAddress, gameABI, metamask)
-        readToken = new ethers.Contract(tokenAddress, tokenABI, metamask)
         */
         
-        signer = metamask.getSigner()
+        provider = new ethers.providers.Web3Provider(window.ethereum)
+        readGame = new ethers.Contract(gameAddress, gameABI, provider)
+        readToken = new ethers.Contract(tokenAddress, tokenABI, provider)
+        
+        signer = provider.getSigner()
         game = new ethers.Contract(gameAddress, gameABI, signer)
         token = new ethers.Contract(tokenAddress, tokenABI, signer)
        
