@@ -825,7 +825,7 @@ const tokenABI = [
 ]
 
 // Get current gas price from Owracle API (wei)
-const gasPriceWei = 10000000000; // 5000000000;
+const gasPriceWei = 5000000000; // 5000000000;
 
 // Deployment block of DuskGame
 const deploymentBlock = 15864422
