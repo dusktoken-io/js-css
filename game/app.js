@@ -2405,7 +2405,7 @@ async function metamaskLogin() {
             gameData = await readGame.gameData()
 
             // Buscar arts (src, by ...)
-            const arts = await fetch("../game/json/arts.json") // https://drive.google.com/uc?id=1-ARAU4exNxGWMhNTZh5t6K53oWRXGM2W
+            const arts = await fetch("https://cdn.jsdelivr.net/gh/dusktoken-io/js-css/game/arts.json")
             if (!arts.ok) {
               throw new Error(`HTTP error ${arts.status}`)
             }
@@ -2549,7 +2549,7 @@ async function metamaskLogin() {
             if(pveWon) {
               if(!data) {
                 // Buscar monstros (name, img ...)
-                const response = await fetch("./json/monsters.json")
+                const response = await fetch("https://cdn.jsdelivr.net/gh/dusktoken-io/js-css/game/monsters.json")
                 if (!response.ok) {
                   throw new Error(`HTTP error ${response.status}`)
                 }
@@ -3214,7 +3214,7 @@ async function nft() {
 
 async function getItems() {
   // Buscar items (name, img ...)
-  const fetchItems = await fetch("./json/items.json")
+  const fetchItems = await fetch("https://cdn.jsdelivr.net/gh/dusktoken-io/js-css/game/items.json")
   if (!fetchItems.ok) {
     throw new Error(`HTTP error ${fetchItems.status}`)
   }
