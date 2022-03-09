@@ -1,0 +1,204 @@
+{
+    "monsters": [
+        {
+            "name": "Putrid",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/1_MRBika_q4GB.png"
+        },
+        {
+            "name": "Scirok",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/2_gB9hQLL6QIm.png"
+        },
+        {
+            "name": "Osseus",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/3_ctAKEcXfFWI.png"
+        },
+        {
+            "name": "Ausol",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/4_TA44-w4R5N7-.png"
+        },
+        {
+            "name": "Cornu",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/5_EbDlnV31eGh.png"
+        },
+        {
+            "name": "Glomer",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/6_x8VKYs4h4Gfd.png"
+        },
+        {
+            "name": "Ictu",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/7_wU1x4xlIw1.png"
+        },
+        {
+            "name": "Celer",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/8_J1dqPO1__9Pv.png"
+        },
+        {
+            "name": "Rydra",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/9_RpCbQFELnrX.png"
+        },
+        {
+            "name": "Latro",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/10_QS1ZytmoFN.png"
+        },
+        {
+            "name": "Bucci",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/11_9cmcOGGL3E8j.png"
+        },
+        {
+            "name": "Messor",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/12_XcpeSdMshNm.png"
+        },
+        {
+            "name": "Spectra",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/13_85XmsjVvnRmK.png"
+        },
+        {
+            "name": "Catena",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/14_LeXXnBLQqEo.png"
+        },
+        {
+            "name": "Malefis",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/15_3WTCLtStjla.png"
+        },
+        {
+            "name": "Trucula",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/16_UQ9okFi1_Gp7.png"
+        },
+        {
+            "name": "Carnifex",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/17_SnSdoLIZxD.png"
+        },
+        {
+            "name": "Veneficus",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/18_j73pYsdey2_.png"
+        },
+        {
+            "name": "Dryad",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/19_SxpdnKIhpp2.png"
+        },
+        {
+            "name": "Ingens",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/20_Y-R-6P75Y7pv.png"
+        },
+        {
+            "name": "Vesper",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/21_7vgTAwMShPg.png"
+        },
+        {
+            "name": "Frior",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/22_wnJozVhHgXK0.png"
+        },
+        {
+            "name": "Culex",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/23_bk0agRay6y6o.png"
+        },
+        {
+            "name": "Viridis",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/24_5UwihJHyZYu.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        },
+        {
+            "name": "Odium",
+            "img": "https://ik.imagekit.io/dusktoken/Monsters/25_6xt5jG85goo.png"
+        }
+    ]
+} 

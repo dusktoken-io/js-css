@@ -1,0 +1,164 @@
+{
+    "0": [
+        {
+            "0": [
+                {
+                    "name": "earing1",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/earing1_O50HR4bcZ9L.png"
+                },
+                {
+                    "name": "earing2",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/earing1_O50HR4bcZ9L.png"
+                },
+                {
+                    "name": "necklace",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/necklace1_zUv1x1bQoS.png"
+                },
+                {
+                    "name": "cape",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Vampires/Male/cape1_LAw-0-eKMI.png"
+                },
+                {
+                    "name": "boot",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/boot1_N50vn6Hb94d.png"
+                },
+                {
+                    "name": "claw",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Vampires/Male/claw1_hGGy1oN_-u2s.png"
+                },
+                {
+                    "name": "bracelet1",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/bracelet1_9a6bXrc-jm.png"
+                },
+                {
+                    "name": "bracelet2",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/bracelet1_9a6bXrc-jm.png"
+                },
+                {
+                    "name": "ring1",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/ring1_WGNHqcbC8v8a.png"
+                },
+                {
+                    "name": "ring2",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/ring1_WGNHqcbC8v8a.png"
+                },
+                {
+                    "name": "ring3",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/ring1_WGNHqcbC8v8a.png"
+                },
+                {
+                    "name": "ring4",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/ring1_WGNHqcbC8v8a.png"
+                },
+                {
+                    "name": "bead1",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Vampires/Male/bead_dRQ0u4qcSff.png"
+                },
+                {
+                    "name": "bead2",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Vampires/Male/bead_dRQ0u4qcSff.png"
+                },
+                {
+                    "name": "bead3",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Vampires/Male/bead_dRQ0u4qcSff.png"
+                },
+                {
+                    "name": "bead4",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Vampires/Male/bead_dRQ0u4qcSff.png"
+                }
+            ]
+        },
+        {
+            "1": [
+
+            ]
+        }
+    ],
+    "1": [
+        {
+            "0": [
+                {
+                    "name": "earing1",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/earing1_O50HR4bcZ9L.png"
+                },
+                {
+                    "name": "earing2",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/earing1_O50HR4bcZ9L.png"
+                },
+                {
+                    "name": "necklace",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/necklace1_zUv1x1bQoS.png"
+                },
+                {
+                    "name": "helmet",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/helmet1_3VnRqRQq6st.png"
+                },
+                {
+                    "name": "breastplate",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/breastplate1_w-cRuvjCQz3.png"
+                },
+                {
+                    "name": "trouser",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/trouser1_MlGyqXJ2CFX.png"
+                },
+                {
+                    "name": "belt",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/belt1_ajIMIsSRzXC.png"
+                },
+                {
+                    "name": "glove",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/glove1_WiDNxKpscf.png"
+                },
+                {
+                    "name": "boot",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/boot1_N50vn6Hb94d.png"
+                },
+                {
+                    "weapon": [
+                        {
+                            "name": "class1weapon",
+                            "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/class1weapon1_Shti5XwU-6e.png"
+                        },
+                        {
+                            "name": "class2weapon",
+                            "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/class2weapon1_EF4jMpGlGJ.png"
+                        },
+                        {
+                            "name": "class3weapon",
+                            "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/class3weapon1_1fmvDPA4bGgR.png"
+                        }
+                    ]
+                },
+                {
+                    "name": "bracelet1",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/bracelet1_9a6bXrc-jm.png"
+                },
+                {
+                    "name": "bracelet2",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/bracelet1_9a6bXrc-jm.png"
+                },
+                {
+                    "name": "ring1",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/ring1_WGNHqcbC8v8a.png"
+                },
+                {
+                    "name": "ring2",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/ring1_WGNHqcbC8v8a.png"
+                },
+                {
+                    "name": "ring3",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/ring1_WGNHqcbC8v8a.png"
+                },
+                {
+                    "name": "ring4",
+                    "img": "https://ik.imagekit.io/dusktoken/Items/Humans/Male/ring1_WGNHqcbC8v8a.png"
+                }
+            ]
+        },
+        {
+            "1": [
+
+            ]
+        }
+    ]
+} 
