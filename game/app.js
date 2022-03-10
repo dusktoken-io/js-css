@@ -2874,7 +2874,7 @@ async function buyNFT(id) {
     try {
       let txResponse = await game.marketBuy(
         id,
-        { gasPrice: gasPriceWei, gasLimit: 200000})
+        { gasPrice: gasPriceWei, gasLimit: 250000})
       let txReceipt = await txResponse.wait()
       console.log(txReceipt)
       console.log("Gas used = " + Number(txReceipt.cumulativeGasUsed["_hex"]))
