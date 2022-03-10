@@ -1768,7 +1768,7 @@ async function selectNFT(id) {
     let lvl = Math.floor(((persona.exp % 1000) / 10) + 1)
     document.getElementById("pveAge").innerText = age
     document.getElementById("pveLvl").innerHTML = "LVL <br>" + lvl
-    let nextHunt = Math.floor((Date.now() - ((persona.lastHunt + 60) * 1000 /* 86400 */)))
+    let nextHunt = Math.floor((Date.now() - (persona.lastHunt + 86400)))
 
     if(nextHunt < 0) {
       document.getElementById("nextHunt").innerText = "Next hunt in: " + secondsToDhms(Math.abs(nextHunt))
