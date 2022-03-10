@@ -2828,7 +2828,6 @@ async function sellNFT(id) {
         let txReceipt = await txResponse.wait()
         console.log(txReceipt)
         console.log("Gas used = " + Number(txReceipt.cumulativeGasUsed["_hex"]))
-        // Atualizar NFT
         document.getElementById("priceBox" + id).classList.add("hide")
         document.getElementById("sellNFT" + id).classList.add("hide")
         document.getElementById("cancelSell" + id).classList.remove("hide")
@@ -2844,7 +2843,6 @@ async function sellNFT(id) {
 
 async function sellCancel(id) {
   console.log("SELL CANCEL")
-  console.log("Id => " + id)
   try {
     let txResponse = await game.cancelMarketSale(
       id,
@@ -2852,7 +2850,6 @@ async function sellCancel(id) {
     let txReceipt = await txResponse.wait()
     console.log(txReceipt)
     console.log("Gas used = " + Number(txReceipt.cumulativeGasUsed["_hex"]))
-    // Atualizar NFT
     document.getElementById("priceBox" + id).value = ""
     document.getElementById("priceBox" + id).classList.remove("hide")
     document.getElementById("sellNFT" + id).classList.remove("hide")
@@ -2881,7 +2878,6 @@ async function buyNFT(id) {
       updateBalance()
       updateNFTCount()
       document.getElementById("nft-" + id).classList.add("hide")
-      // Informar a compra concluída, link para my-nfts
     } catch(e) {
       console.log(e.message)
       return
@@ -2893,9 +2889,7 @@ async function buyNFT(id) {
 }
 
 async function vladsCastle() {
-  // Checar se tem alguma persona selecionada
   if(sessionStorage.getItem("selectedNFT")) {
-    // Checar se já não tem alguma Persona registrada
 
     console.log(await readGame.getVladsCastleEntrants())
 
@@ -3118,7 +3112,6 @@ async function nft() {
           document.getElementById("humanGear").classList.remove("hide")
         }
 
-        // Percorrer items e popular inventário
         for(let i=0; i<16; i++) {
           let job = persona.class
           // STR DEX INT
@@ -3211,7 +3204,6 @@ async function nft() {
 }
 
 async function getItems() {
-  // Buscar items (name, img ...)
   const fetchItems = await fetch("https://cdn.jsdelivr.net/gh/dusktoken-io/js-css/game/items.json")
   if (!fetchItems.ok) {
     throw new Error(`HTTP error ${fetchItems.status}`)
@@ -3246,7 +3238,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
     if(pveWon && !sessionStorage.getItem("userLoggedIn"))
       updatePveLocations(0)
       
-    // Se o usuário já fez login anteriormente na sessão
     if(sessionStorage.getItem("userLoggedIn")) {
         metamaskLogin()
     } else {
