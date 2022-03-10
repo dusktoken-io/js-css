@@ -922,7 +922,7 @@ async function listNFTs() {
     // ********** STR DEX INT adicionar os pontos dos ITENS **************
     html = 
     `<li>
-      <a href="nft?${ids[i]}">
+      <a href="nft.html?${ids[i]}">
         <div class="nft ${race}">
           <div class="nft-line1">
             <div class="line1-wrap">
@@ -1322,7 +1322,7 @@ async function listPVPs(wipe) {
 
           pvpList += 
             `<li>
-              <a href="nft?${i}">
+              <a href="nft.html?${i}">
                 <div class="nft ${race}">
                   <div class="nft-line1">
                     <div class="line1-wrap">
@@ -1508,7 +1508,7 @@ async function listed() {
         }
         buyList += 
           `<li>
-            <a href="nft?${sellIds[i]}">
+            <a href="nft.html?${sellIds[i]}">
             <div class="nft ${race}">
               <div class="nft-line1">
                 <div class="line1-wrap">
@@ -1641,7 +1641,7 @@ async function sold() {
 
             document.getElementById("sold-list").innerHTML += 
             `<li>
-              <a href="nft?${soldNFTs[j].args["id"]}">
+              <a href="nft.html?${soldNFTs[j].args["id"]}">
                 <div class="nft ${race}">
                   <div class="nft-line1">
                     <div class="line1-wrap">
@@ -1783,7 +1783,7 @@ async function selectNFT(id) {
     }
     else 
       document.getElementById("nextHunt").innerText = "Ready to hunt"
-    document.getElementById("pveLink").href = "nft?" + id
+    document.getElementById("pveLink").href = "nft.html?" + id
     document.getElementById("pveNFT").classList.remove("hide")
     document.getElementById("pveSelect").classList.add("hide")
   } else if(document.getElementById("vampList") && document.getElementById("nft" + sessionStorage.getItem("selectedNFT"))) {
@@ -1817,7 +1817,7 @@ async function selectNFT(id) {
       }
       if(persona.race != 0)
         document.getElementById("pvpNFT").classList.add("human")
-      document.getElementById("pvpLink").href = "nft?" + sessionStorage.getItem("selectedNFT")
+      document.getElementById("pvpLink").href = "nft.html?" + sessionStorage.getItem("selectedNFT")
       document.getElementById("pvpName").innerText = ethers.utils.parseBytes32String(persona.name)
       document.getElementById("pvpImg").src = artsJson[persona.race][persona.gender][persona.art]["src"]
       let rarity = "basic"
@@ -2645,7 +2645,7 @@ async function pve(monsterLvl) {
                 itemImg = itemsJson[persona.race][0][0][i].img
               }
               // Setar name, rarity, img, remover hide
-              document.getElementById("pveItemLink").href="nft?" + sessionStorage.getItem("selectedNFT")
+              document.getElementById("pveItemLink").href="nft.html?" + sessionStorage.getItem("selectedNFT")
               document.getElementById("pveItemName").innerText = itemName
               switch(Math.floor(txReceipt.events[0].args["item"] / 10000)) {
                 case 1:
