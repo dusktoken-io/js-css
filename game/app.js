@@ -2615,7 +2615,7 @@ async function pve(monsterLvl) {
       let txResponse = await game.hunt(
         sessionStorage.getItem("selectedNFT"), 
         monsterLvl, 
-        { gasPrice: gasPriceWei, gasLimit: 160000})
+        { gasPrice: gasPriceWei, gasLimit: 100000})
       let txReceipt = await txResponse.wait()
       console.log(txReceipt)
       console.log("EXP => " + txReceipt.events[0].args["exp"])
@@ -2737,7 +2737,7 @@ async function pvpCreate() {
         let txResponse = await game.startBattle(
           sessionStorage.getItem("selectedNFT"), 
           document.getElementById("bountyBox").value,
-          { gasPrice: gasPriceWei, gasLimit: 200000})
+          { gasPrice: gasPriceWei, gasLimit: 150000})
         let txReceipt = await txResponse.wait()
         console.log(txReceipt)
         console.log("Gas used = " + Number(txReceipt.cumulativeGasUsed["_hex"]))
@@ -2762,7 +2762,7 @@ async function pvpDelete() {
   try {
     let txResponse = await game.endBattle(
       sessionStorage.getItem("selectedNFT"),
-      { gasPrice: gasPriceWei, gasLimit: 500000})
+      { gasPrice: gasPriceWei, gasLimit: 200000})
     let txReceipt = await txResponse.wait()
     console.log(txReceipt)
     console.log("Gas used = " + Number(txReceipt.cumulativeGasUsed["_hex"]))
@@ -2786,7 +2786,7 @@ async function pvpFight(enemyId) {
       let txResponse = await game.enterBattle(
         sessionStorage.getItem("selectedNFT"), 
         enemyId,
-        { gasPrice: gasPriceWei, gasLimit: 400000})
+        { gasPrice: gasPriceWei, gasLimit: 150000})
       let txReceipt = await txResponse.wait()
       console.log(txReceipt)
       let e = 0
@@ -2824,7 +2824,7 @@ async function sellNFT(id) {
       try {
         let txResponse = await game.marketSale(id, 
           document.getElementById("priceBox" + id).value,
-          { gasPrice: gasPriceWei, gasLimit: 250000})
+          { gasPrice: gasPriceWei, gasLimit: 200000})
         let txReceipt = await txResponse.wait()
         console.log(txReceipt)
         console.log("Gas used = " + Number(txReceipt.cumulativeGasUsed["_hex"]))
@@ -2874,7 +2874,7 @@ async function buyNFT(id) {
     try {
       let txResponse = await game.marketBuy(
         id,
-        { gasPrice: gasPriceWei, gasLimit: 700000})
+        { gasPrice: gasPriceWei, gasLimit: 200000})
       let txReceipt = await txResponse.wait()
       console.log(txReceipt)
       console.log("Gas used = " + Number(txReceipt.cumulativeGasUsed["_hex"]))
@@ -2918,7 +2918,6 @@ async function vladsCastle() {
   } else {
     showSnackbar("No character selected")
   }
-  
 }
 
 async function withdraw() {
