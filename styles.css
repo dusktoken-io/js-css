@@ -705,7 +705,6 @@ h5 {
 .tokenomics-left {
   position: relative;
   flex: 1;
-  overflow: hidden;
 }
 
 #locks {
