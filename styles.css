@@ -708,6 +708,41 @@ h5 {
   overflow: hidden;
 }
 
+#locks {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transform: translate(-4vw, -50%);
+  z-index: 9999;
+}
+.lock {
+  margin: 0 0 4vh;
+  filter: drop-shadow(2px 2px 2px #000) drop-shadow(-2px -2px 2px #000);
+}
+.lock img {
+  width: 32px;
+  height: 32px;
+  margin: 0 1vh 0 0;
+  animation: lock 1s ease infinite;
+}
+.lock a {
+  font-weight: 900;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.lock a:hover {
+  text-decoration: underline;
+}
+.lock span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .chart {
   max-width: 75%;
   vertical-align: middle;
@@ -1580,6 +1615,20 @@ animation:rotation240 4s infinite linear;
   100% { 
     transform: translateY(-100%);
     opacity: 1;
+  }
+}
+@keyframes lock {
+  0% { 
+    transform: rotate(-5deg);
+  }
+  50% { 
+    transform: rotate(0deg);
+  }
+  75% { 
+    transform: rotate(5deg);
+  }
+  100% { 
+    transform: rotate(0deg);
   }
 }
 /* Mobile 768px */
