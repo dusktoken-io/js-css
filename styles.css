@@ -68,7 +68,7 @@ h5 {
   margin: 0 auto;
   width: fit-content;
   filter: drop-shadow(2px 2px 4px #000) drop-shadow(-2px -2px 4px #000);
-  transition: all 0.5s ease;
+  transition: all .5s ease;
 }
 
 #logo-cont:hover {
