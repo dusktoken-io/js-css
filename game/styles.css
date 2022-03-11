@@ -585,18 +585,34 @@ h5 {
   text-decoration: none;
   color: #fff;
 }
+#recent-pvps-title {
+  margin: 2vh 2vh 6vh;
+  width: 100%;
+}
+#recent-pvps a {
+  color: #fff;
+  text-decoration: none;
+}
+.pvp-tx {
+  display: block;
+}
+.pvp-result {
+  padding: 2vh 0 1vh;
+  display: flex;
+  flex-direction: column;
+}
+.pvp-result span {
+  margin: 0 0 1vh;
+}
 .nft-list-left, .nft-list-right {
   flex: 1;
   padding: 4vh;
   min-width: 32vw;
   backdrop-filter: sepia(0%) hue-rotate(65deg) saturate(200%);
 }
-
 .nft-list-right {
   backdrop-filter: sepia(100%) hue-rotate(190deg) saturate(500%);
-  /* clip-path: polygon(0 0, 95% 0, 100% 5%, 100% 95%, 95% 100%, 0 100%, 0% 70%, 0% 30%); */
 }
-
 .nft-list ul {
   display: flex;
   align-items: center;
@@ -1418,7 +1434,7 @@ h5 {
   flex: 1;
   display: flex;
   margin: 0 2vh 4vh;
-  min-width: 16vw;
+  min-width: 18vw;
 }
 .pvpInfo {
   position: absolute;
