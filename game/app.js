@@ -1686,7 +1686,7 @@ async function sold() {
 
   var filter = readGame.filters.SoldOnMarket(null, null, null, null)
 
-  var soldIds = []
+  var soldIds = 0
 
   var totalVolume = 0
   var highestPrice = 0
@@ -1696,6 +1696,8 @@ async function sold() {
   var humanAverage = 0
 
   for(i = latest; i >= deploymentBlock; i -= 5000) {
+    if(soldIds > 4)
+      break
     latest = i - 4999
     if(latest < 0)
       latest = 0
@@ -1704,13 +1706,14 @@ async function sold() {
       soldNFTs = await readGame.queryFilter(filter, latest, i)
       for(j = soldNFTs.length; j >= 0; j--) {
         if(soldNFTs[j]) {
+	  soldIds++
 
           totalVolume += Number.parseInt(soldNFTs[j].args["price"])
 
           if(Number.parseInt(soldNFTs[j].args["price"]) > highestPrice)
             highestPrice = Number.parseInt(soldNFTs[j].args["price"])
 
-          if(soldIds.length < 13) {
+          if(soldIds < 4) {
             let persona = await readGame.idToPersona(soldNFTs[j].args["id"])
             let race = ""
 
