@@ -77,7 +77,7 @@ function createDateAsUTC(date) {
 }
 
 (function () {
-    let e = createDateAsUTC(new Date("february 26, 2022 18:00:00"))
+    let e = createDateAsUTC(new Date("march 11, 2022 18:00:00"))
     const t = new Date(e).getTime(),
     o = setInterval(function () {
         const e = new Date().getTime(),
