@@ -1372,6 +1372,111 @@ async function listPVPs(wipe) {
           document.getElementById("pvpFirst").innerHTML + '</li>' + pvpList
   else 
     document.getElementById("pvpList").innerHTML += pvpList
+  console.log("Recent PVPs")
+
+  var latest = await provider.getBlockNumber()
+
+  var filter = readGame.filters.BattleWon(null, null, null, null, null)
+
+  var recentPVPs = []
+
+  for(i = latest; i >= deploymentBlock; i -= 5000) {
+    latest = i - 4999
+    if(latest < 0)
+      latest = 0
+    console.log("Block: " + latest + " to " + i)
+    if(filter) {
+      recentPVPs = await readGame.queryFilter(filter, latest, i)
+      for(j = recentPVPs.length; j >= 0; j--) {
+        if(recentPVPs[j]) {
+          if(recentPVPs.length < 9) {
+            let defender = await readGame.idToPersona(recentPVPs[j].args["defender"])
+            let attacker = await readGame.idToPersona(recentPVPs[j].args["attacker"])
+            let owner = await readGame.idToPersona(recentPVPs[j].args["winner"])
+            let bounty = recentPVPs[j].args["bounty"]
+            let winner
+            let enemy
+            if(readGame.ownerOf(recentPVPs[j].args["defender"]) == owner) {
+              winner = defender
+              enemy = attacker
+              id = recentPVPs[j].args["defender"]
+            } else {
+              winner = attacker
+              enemy = defender
+              id = recentPVPs[j].args["attacker"]
+            }
+            let persona = winner
+            
+            let race = ""
+
+            if(persona.race == 1)
+              race = "human"
+
+            let rarity = ""
+
+            switch(persona.rarity) {
+              case 1:
+                rarity = "common"
+                break;
+              case 2:
+                rarity = "rare"
+                break;
+              case 3:
+                rarity = "epic"
+                break;
+              case 4:
+                rarity = "legendary"
+                break;
+            }
+            let age = Math.floor((Date.now() - persona.age * 1000) / (1000 * 86400))
+            let lvl = Math.floor(((persona.exp % 1000) / 10) + 1)
+
+            document.getElementById("recent-pvps").innerHTML += 
+            `<li>
+              <a href="nft?${id}">
+                <div class="nft ${race}">
+                  <div class="nft-line1">
+                    <div class="line1-wrap">
+                      <span class="lvl notranslate">LVL<br>${lvl}</span>
+                    </div>
+                    <span class="name">
+                      <span class="notranslate">${ethers.utils.parseBytes32String(persona.name)}</span><br>
+                      <span class="age">${age} years</span>
+                    </span>
+                    <div class="line1-wrap">
+                      <span class="rank notranslate">GRADE<br> img</span>
+                    </div>
+                  </div>
+                  <div class="nft-line3">
+                    <img class="${rarity}" src="${artsJson[persona.race][persona.gender][persona.art]["src"]}">
+                    <div class="info">
+                      <span class="info-wrap">
+                        <ul class="info">
+                          <li>info1: 123</li>
+                          <li>info2: 987</li>
+                          <li>info3: 452</li>
+                          <li>info3: 8252</li>
+                        </ul>
+                      </span>
+                    </div>
+                  </div>
+                  </a>
+                  <div class="nft-line4">
+                    <a class="pvp-tx" href="${blockExplorer}tx/${recentPVPs[j].transactionHash}" target="_blank">
+                      <div class="pvp-result">
+                        <span>Defeated <span style="color:#a32ba8">${ethers.utils.parseBytes32String(enemy.name)}</span></span>
+                        <span>For ${ethers.utils.commify(bounty)} $DUSK</span>
+                    </div>
+                    </a>
+                  </div>
+                </div>
+            </li>`
+          } else
+            break
+        }
+      }
+    }
+  }
 }
 
 async function listBuy() {
